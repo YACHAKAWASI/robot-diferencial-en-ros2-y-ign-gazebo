@@ -1,0 +1,14 @@
+
+material UrbanTile/HD2_Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture HD2_Albedo.jpg
+        }
+      }
+    }
+  }

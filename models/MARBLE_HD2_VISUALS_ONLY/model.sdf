@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="marble_hd2_visuals_only">
+    <static>true</static>
+    <link name="base_link">
+      <visual name= "Gripper_visual">
+        <geometry>
+          <mesh>
+            <uri>model://HD2/meshes/hd2.dae</uri>
+            <submesh>
+              <name>Gripper</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://HD2/materials/textures/HD2_Albedo.jpg</albedo_map>
+              <metal_map>model://HD2/materials/textures/HD2_Metalness.jpg</metal_map>
+              <roughness_map>model://HD2/materials/textures/HD2_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://HD2/materials/scripts/</uri>
+            <uri>model://HD2/materials/textures/</uri>
+            <name>UrbanTile/HD2_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "CameraPivot_visual">
+        <geometry>
+          <mesh>
+            <uri>model://HD2/meshes/hd2.dae</uri>
+            <submesh>
+              <name>CameraPivot</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://HD2/materials/textures/HD2_Albedo.jpg</albedo_map>
+              <metal_map>model://HD2/materials/textures/HD2_Metalness.jpg</metal_map>
+              <roughness_map>model://HD2/materials/textures/HD2_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://HD2/materials/scripts/</uri>
+            <uri>model://HD2/materials/textures/</uri>
+            <name>UrbanTile/HD2_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "CameraTilt_visual">
+        <geometry>
+          <mesh>
+            <uri>model://HD2/meshes/hd2.dae</uri>
+            <submesh>
+              <name>CameraTilt</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://HD2/materials/textures/HD2_Albedo.jpg</albedo_map>
+              <metal_map>model://HD2/materials/textures/HD2_Metalness.jpg</metal_map>
+              <roughness_map>model://HD2/materials/textures/HD2_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://HD2/materials/scripts/</uri>
+            <uri>model://HD2/materials/textures/</uri>
+            <name>UrbanTile/HD2_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <visual name= "Body_visual">
+        <geometry>
+          <mesh>
+            <uri>model://HD2/meshes/hd2.dae</uri>
+            <submesh>
+              <name>Body</name>
+              <center>false</center>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+          <specular>1.0 1.0 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>model://HD2/materials/textures/HD2_Albedo.jpg</albedo_map>
+              <metal_map>model://HD2/materials/textures/HD2_Metalness.jpg</metal_map>
+              <roughness_map>model://HD2/materials/textures/HD2_Roughness.jpg</roughness_map>
+            </metal>
+          </pbr>
+          <!-- fallback to script if no PBR support-->
+          <script>
+            <uri>model://HD2/materials/scripts/</uri>
+            <uri>model://HD2/materials/textures/</uri>
+            <name>UrbanTile/HD2_Diffuse</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
